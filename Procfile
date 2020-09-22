@@ -1,0 +1,1 @@
+web: gunicorn ejercicioCAP.wsgi --log-file -
