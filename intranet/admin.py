@@ -38,7 +38,7 @@ class FormularioAdmin(admin.ModelAdmin):
 
     def get_readonly_fields(self, request, obj=None):
 	    user = request.user
-	    if user.has_perm('Formulario.asignar'):
+	    if user.has_perm('intranet.asignar'):
 	        return []
 	    else:
 	        return ['permiso']    	
