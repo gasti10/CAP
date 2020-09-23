@@ -37,18 +37,17 @@ class FormularioAdmin(admin.ModelAdmin):
         	return qs.filter(permiso__id = request.user.id)
 
     def get_readonly_fields(self, request, obj=None):
-	user = request.user
-	if user.has_perm('Formulario.asignar'):
-		return []
-	else:
-		return ['permiso']
-	
+	    user = request.user
+	    if user.has_perm('Formulario.asignar'):
+	        return []
+	    else:
+	        return ['permiso']    	
+
     class FormularioForm(forms.ModelForm):
         class Meta:
             widgets = {
                 'address': AddressWithMapWidget({'class': 'vTextField'})
             }
-
     form = FormularioForm
 
     def response_change(self, request, obj):
