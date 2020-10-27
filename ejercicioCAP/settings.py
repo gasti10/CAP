@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '387b1^k7zta1$!b8$m18t!r603x2v@&_yt8f)w+6vz@qweq0n&'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -125,7 +125,7 @@ STATIC_URL = '/static/'
 
 ## Easy Maps settings
 #The only mandatory configuration is the EASY_MAPS_GOOGLE_KEY variable:
-EASY_MAPS_GOOGLE_KEY = 'AIzaSyB6sagFOK4RCY10pC69A6TRvcDai8_nbRU'
+EASY_MAPS_GOOGLE_KEY = ''
 EASY_MAPS_LANGUAGE = 'es'
 
 # Heroku: Update database configuration from $DATABASE_URL.
